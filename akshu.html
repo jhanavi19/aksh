@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday Akshay!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8e6e6;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #cc0033;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    button {
+      background-color: #cc0033;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #e60000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Happy Birthday, Akshay!</h1>
+    <p>Dear Akshay,</p>
+    <p>Wishing you the happiest of birthdays! On this special day, I want you to know how much I love you and how grateful I am to have you in my life.</p>
+    <p>You bring so much joy and love into my life, and I cherish every moment we spend together. You're not just my boyfriend; you're my best friend and my soulmate.</p>
+    <p>I hope this day is filled with happiness, laughter, and all the things that bring you joy. May all your dreams and aspirations come true.</p>
+    <p>Once again, Happy Birthday, Akshu baby! I love you more than words can express.</p>
+
+    <!-- Add a button for the voice message -->
+    <button onclick="playVoiceMessage()">Play Voice Message</button>
+
+    <!-- Add an audio element for the voice message -->
+    <audio id="voiceMessage" controls>
+      <!-- Add the link to your voice message file here -->
+      <source src="akshay.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <script>
+    function playVoiceMessage() {
+      // Get the audio element by its ID
+      var audio = document.getElementById("voiceMessage");
+
+      // Play the audio
+      audio.play();
+    }
+  </script>
+</body>
+</html>
